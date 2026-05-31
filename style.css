@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    overflow-x:hidden;
+}
+
+.invitacion{
+    position:relative;
+    width:100%;
+    max-width:430px;
+}
+
+.tarjeta{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/* =========================
+   CABECERA
+========================= */
+
+.bolas-boliche{
+    position:absolute;
+    width:450px;
+    top:-20px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:10;
+    pointer-events:none;
+
+    opacity:0.35;
+}
+
+/* =========================
+   ITINERARIO
+========================= */
+
+.mano{
+    position:absolute;
+    width:40px;
+    top:1660px;
+    left:24px;
+    z-index:20;
+}
+
+.rosa{
+    position:absolute;
+    width:40px;
+    top:1730px;
+    left:24px;
+    z-index:10;
+}
+
+.cena{
+    position:absolute;
+    width:40px;
+    top:1800px;
+    left:24px;
+    z-index:10;
+}
+
+.cono{
+    position:absolute;
+    width:40px;
+    top:1860px;
+    left:24px;
+    z-index:10;
+}
+
+.icono-musica{
+    position:absolute;
+    width:40px;
+    top:1920px;
+    left:24px;
+    z-index:10;
+}
+
+.bola{
+    position:absolute;
+    width:40px;
+    top:1980px;
+    left:24px;
+    z-index:10;
+}
+
+/* =========================
+   EFECTO SUAVE
+========================= */
+
+.mano,
+.rosa,
+.cena,
+.cono,
+.icono-musica,
+.bola{
+    filter: drop-shadow(0 0 4px rgba(255,255,255,.3));
+}
+
+/* =========================
+   BOTÓN PLAY MÚSICA
+========================= */
+
+.play-musica{
+    position:absolute;
+
+    top:885px;
+    left:195px;
+
+    width:40px;
+    height:40px;
+
+    z-index:50;
+
+    cursor:pointer;
+}
