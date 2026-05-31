@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV Luciana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="invitacion">
+
+    <!-- TARJETA BASE -->
+    <img
+        src="assets/tarjeta-completar.png"
+        alt="Invitación XV"
+        class="tarjeta"
+    >
+
+    <!-- CABECERA -->
+    <img src="assets/bolas-boliche.gif" class="bolas-boliche" alt="">
+
+    <!-- ITINERARIO -->
+    <img src="assets/mano.gif" class="mano" alt="">
+    <img src="assets/rosa.gif" class="rosa" alt="">
+    <img src="assets/cena.gif" class="cena" alt="">
+    <img src="assets/cono.gif" class="cono" alt="">
+    <img src="assets/icono-musica.gif" class="icono-musica" alt="">
+    <img src="assets/bola.gif" class="bola" alt="">
+
+    <!-- BOTÓN PLAY INVISIBLE -->
+    <a href="#" id="playMusic" class="play-musica"></a>
+
+    <!-- AUDIO -->
+    <audio id="musica">
+        <source src="assets/Chayanne - Tiempo De Vals (Vídeo Oficial).mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+<script>
+const playBtn = document.getElementById('playMusic');
+const musica = document.getElementById('musica');
+
+let reproduciendo = false;
+
+playBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    if (!reproduciendo) {
+        musica.play();
+        reproduciendo = true;
+    } else {
+        musica.pause();
+        reproduciendo = false;
+    }
+});
+</script>
+
+</body>
+</html>
